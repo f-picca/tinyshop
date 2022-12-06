@@ -29,87 +29,39 @@
         
     </head>
     <body>
-        <link href="https://commercelayer.github.io/drop-in.js/dist/drop-in/drop-in.css" rel="stylesheet" />
-        <link href="https://commercelayer.github.io/drop-in.js/dist/drop-in/minicart.css" rel="stylesheet" />
+        <!-- config here -->
+
         <header>
             <h1>Welcome to the tiniest ecommerce website in the world</h1> 
-            <cl-cart-link>
-            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M27 6H5C4.44772 6 4 6.44772 4 7V25C4 25.5523 4.44772 26 5 26H27C27.5523 26 28 25.5523 28 25V7C28 6.44772 27.5523 6 27 6Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                <path d="M4 10H28" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                <path d="M21 14C21 15.3261 20.4732 16.5979 19.5355 17.5355C18.5979 18.4732 17.3261 19 16 19C14.6739 19 13.4021 18.4732 12.4645 17.5355C11.5268 16.5979 11 15.3261 11 14" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-            </svg>
-
-            <cl-cart-count></cl-cart-count>
-            <cl-cart></cl-cart>
-            </cl-cart-link>
+            
+            <!-- cart here -->
+            
+           
         </header>
         
 
-        <script type="module" src="https://commercelayer.github.io/drop-in.js/dist/drop-in/drop-in.esm.js"></script>
-        <script>
-        (function() {
-            window.commercelayerConfig = {
-            clientId: 'kuSKPbeKbU9LG9LjndzieKWRcfiXFuEfO0OYHXKH9J8',
-            slug: 'drop-in-js',
-            scope: 'market:11709',
-            debug: 'all', // 'none' is the default
-            returnUrl: 'https://example.com' // optional
-            }
-        }());
-        </script>
-
+       
         <div class="product-tile">
-            <h2>this is a super nice product</h2>
-            <p>this is really something you never saw anywhere. even here.</p>
-            <p>and it costs: <cl-price code="5PANECAP000000FFFFFFXXXX">
-                <cl-price-amount type="compare-at"></cl-price-amount>
-                <cl-price-amount type="price"></cl-price-amount>
-            </cl-price></p>
-            <cl-availability code="5PANECAP000000FFFFFFXXXX">
-                <cl-availability-status type="available">
-                    <span style="color: green;">[available]</span>
-                    ready to be shipped in
-                    <cl-availability-info type="min-days"></cl-availability-info>-<cl-availability-info type="max-days"></cl-availability-info>
-                    days
-                </cl-availability-status>
-                <cl-availability-status type="unavailable" style="color: red;">
-                    • out of stock
-                </cl-availability-status>
-            </cl-availability>
-            <br/>
+            <h2>LA Confidential</h2>
+            <p>L.A. Confidential, the Book and the Movie, are two different animals and the movie (arguably an instant classic) is by far the better of the two; a testament to the value of talented editing---which is not just cutting, but cutting and stitching, turning something that was flabby and dull into something sharp and compelling. </p>
+            <!-- product 1 info here-->
             
+
             <br/>
-            <cl-add-to-cart code="5PANECAP000000FFFFFFXXXX">
-                Add to cart
-            </cl-add-to-cart>
+            <br/>
+            <!-- product 1 add to cart here-->
+
             <br/>
         </div>
 
         <div class="product-tile">
-            <h2>this is is even nicer than the previous</h2>
-            <p>and is even less visibile.</p>
-            <p>and it costs: <cl-price code="BACKPACKFFFFFF000000XXXX">
-                <cl-price-amount type="compare-at"></cl-price-amount>
-                <cl-price-amount type="price"></cl-price-amount>
-            </cl-price></p>
-            <cl-availability code="BACKPACKFFFFFF000000XXXX">
-                <cl-availability-status type="available">
-                    <span style="color: green;">[available]</span>
-                    ready to be shipped in
-                    <cl-availability-info type="min-days"></cl-availability-info>-<cl-availability-info type="max-days"></cl-availability-info>
-                    days
-                </cl-availability-status>
-                <cl-availability-status type="unavailable" style="color: red;">
-                    • out of stock
-                </cl-availability-status>
-            </cl-availability>
+            <h2>The Illuminatus! Trilogy</h2>
+            <p>The Illuminatus! Trilogy is a pretty weird book, even by postmodern conventions. The narrative jumps back and forth between 3rd person and any given character without warning. There are quite a few plot threads, and the transitions between these threads are practically nonexistent; nothing is really there to signify a change in scene, and sometimes one thread even jumps to another mid-sentence.</p>
+            <!-- product 2 info here-->
             <br/>
             
             <br/>
-            <cl-add-to-cart code="BACKPACKFFFFFF000000XXXX">
-                Add to cart
-            </cl-add-to-cart>
+            <!-- product 2 add to cart-->
             <br/>
         </div>
 
