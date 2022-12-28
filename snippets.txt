@@ -1,0 +1,76 @@
+Config
+
+  <link href="https://commercelayer.github.io/drop-in.js/dist/drop-in/drop-in.css" rel="stylesheet" />
+        <link href="https://commercelayer.github.io/drop-in.js/dist/drop-in/minicart.css" rel="stylesheet" />
+
+        <script type="module" src="https://commercelayer.github.io/drop-in.js/dist/drop-in/drop-in.esm.js"></script>
+        <script>
+        (function() {
+            window.commercelayerConfig = {
+            clientId: 'GJUiFO-oW0dQQXn8xRC09GcKnwdFxnMo19AH0SS58iw',
+            slug: 'the-orange-brand-137',
+            scope: 'market:3319',
+            debug: 'all', // 'none' is the default
+            returnUrl: 'https://example.com' // optional
+            }
+        }());
+        </script>
+
+
+Product 1
+
+<cl-price code="LA_CONFIDENTIAL">
+                <cl-price-amount type="compare-at"></cl-price-amount>
+                <cl-price-amount type="price"></cl-price-amount>
+            </cl-price>
+            <cl-availability code="LA_CONFIDENTIAL">
+                <cl-availability-status type="available">
+                    <span style="color: green;">[available]</span>
+                    ready to be shipped in
+                    <cl-availability-info type="min-days"></cl-availability-info>-<cl-availability-info type="max-days"></cl-availability-info>
+                    days
+                </cl-availability-status>
+                <cl-availability-status type="unavailable" style="color: red;">
+                    • out of stock
+                </cl-availability-status>
+            </cl-availability>
+
+
+            <cl-add-to-cart code="LA_CONFIDENTIAL">
+                Add to cart
+            </cl-add-to-cart>
+
+
+Product 2
+
+<cl-price code="ILLUMINATUS_TRILOGY_BOOK">
+                <cl-price-amount type="compare-at"></cl-price-amount>
+                <cl-price-amount type="price"></cl-price-amount>
+            </cl-price>
+            <cl-availability code="ILLUMINATUS_TRILOGY_BOOK">
+                <cl-availability-status type="available">
+                    <span style="color: green;">[available]</span>
+                    ready to be shipped in
+                    <cl-availability-info type="min-days"></cl-availability-info>-<cl-availability-info type="max-days"></cl-availability-info>
+                    days
+                </cl-availability-status>
+                <cl-availability-status type="unavailable" style="color: red;">
+                    • out of stock
+                </cl-availability-status>
+            </cl-availability>
+
+            <cl-add-to-cart code="ILLUMINATUS_TRILOGY_BOOK">
+                Add to cart
+            </cl-add-to-cart>            
+
+Cart
+
+<cl-cart-link>
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M27 6H5C4.44772 6 4 6.44772 4 7V25C4 25.5523 4.44772 26 5 26H27C27.5523 26 28 25.5523 28 25V7C28 6.44772 27.5523 6 27 6Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M4 10H28" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M21 14C21 15.3261 20.4732 16.5979 19.5355 17.5355C18.5979 18.4732 17.3261 19 16 19C14.6739 19 13.4021 18.4732 12.4645 17.5355C11.5268 16.5979 11 15.3261 11 14" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+
+            <cl-cart-count></cl-cart-count>
+            </cl-cart-link>
